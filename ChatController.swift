@@ -61,6 +61,7 @@ class ChatController: UIViewController, UITableViewDataSource, UITableViewDelega
             cell.ChatBubbleImage.image = image
             println(image.size.width)
             return cell
+            
         }
     }
 }
