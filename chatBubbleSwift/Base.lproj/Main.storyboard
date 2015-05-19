@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CTN-dO-5VB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CTN-dO-5VB">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -64,26 +64,53 @@
                                             <nil key="highlightedColor"/>
                                             <variation key="default">
                                                 <mask key="constraints">
+                                                    <exclude reference="Cdy-T0-6bJ"/>
                                                     <exclude reference="d5o-ul-2HY"/>
                                                 </mask>
                                             </variation>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BLH-1V-vZ6">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="59"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BLH-1V-vZ6">
+                                            <rect key="frame" x="0.0" y="0.0" width="29" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="MWs-2P-MPV"/>
+                                                <constraint firstAttribute="width" constant="29" id="u0K-7j-oPF"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RP0-JV-ekj">
+                                            <rect key="frame" x="29" y="0.0" width="99" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="Hpt-H3-7xa"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uqz-Rr-HAy">
+                                            <rect key="frame" x="128" y="0.0" width="8" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="8" id="ASX-n8-QU6"/>
+                                                <constraint firstAttribute="height" constant="50" id="dQI-eg-aU5"/>
+                                            </constraints>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="bVQ-Bq-jd3" firstAttribute="top" secondItem="r4g-V6-g6b" secondAttribute="topMargin" id="8AU-g8-f0U"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Cbq-Rj-DJS" secondAttribute="bottom" constant="-1" id="PYH-TG-uO7"/>
+                                        <constraint firstItem="BLH-1V-vZ6" firstAttribute="top" secondItem="r4g-V6-g6b" secondAttribute="topMargin" constant="-8" id="7qF-ec-i6D"/>
+                                        <constraint firstItem="RP0-JV-ekj" firstAttribute="top" secondItem="r4g-V6-g6b" secondAttribute="topMargin" constant="-8" id="CiA-47-eEt"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Cbq-Rj-DJS" secondAttribute="bottom" constant="-1" id="EE7-dy-ebp"/>
+                                        <constraint firstItem="BLH-1V-vZ6" firstAttribute="leading" secondItem="r4g-V6-g6b" secondAttribute="leadingMargin" constant="-8" id="FFA-VF-aFW"/>
+                                        <constraint firstItem="Uqz-Rr-HAy" firstAttribute="top" secondItem="r4g-V6-g6b" secondAttribute="topMargin" constant="-8" id="FkX-iv-eAP"/>
+                                        <constraint firstItem="RP0-JV-ekj" firstAttribute="leading" secondItem="Uqz-Rr-HAy" secondAttribute="leading" constant="-99" id="KKn-uh-yka"/>
+                                        <constraint firstItem="bVQ-Bq-jd3" firstAttribute="leading" secondItem="r4g-V6-g6b" secondAttribute="leadingMargin" constant="21" id="MQP-Rm-XP9"/>
                                         <constraint firstItem="bVQ-Bq-jd3" firstAttribute="leading" secondItem="r4g-V6-g6b" secondAttribute="leadingMargin" constant="-7" id="XMR-hG-xFF"/>
+                                        <constraint firstItem="bVQ-Bq-jd3" firstAttribute="top" secondItem="r4g-V6-g6b" secondAttribute="topMargin" id="n1S-F0-AeV"/>
+                                        <constraint firstItem="Cbq-Rj-DJS" firstAttribute="leading" secondItem="r4g-V6-g6b" secondAttribute="leadingMargin" constant="21" id="nRa-SA-0de"/>
                                         <constraint firstItem="Cbq-Rj-DJS" firstAttribute="top" secondItem="bVQ-Bq-jd3" secondAttribute="bottom" constant="8" symbolic="YES" id="nvC-NC-dqJ"/>
+                                        <constraint firstItem="RP0-JV-ekj" firstAttribute="leading" secondItem="BLH-1V-vZ6" secondAttribute="leading" constant="29" id="oDX-GY-iWL"/>
                                         <constraint firstItem="Cbq-Rj-DJS" firstAttribute="bottom" secondItem="r4g-V6-g6b" secondAttribute="bottomMargin" constant="-2" id="r1Q-ku-nIG"/>
-                                        <constraint firstItem="Cbq-Rj-DJS" firstAttribute="leading" secondItem="r4g-V6-g6b" secondAttribute="leadingMargin" constant="21" id="rJz-ZY-aJc"/>
-                                        <constraint firstItem="bVQ-Bq-jd3" firstAttribute="leading" secondItem="r4g-V6-g6b" secondAttribute="leadingMargin" constant="21" id="vXX-g7-C4l"/>
+                                        <constraint firstItem="Uqz-Rr-HAy" firstAttribute="leading" secondItem="RP0-JV-ekj" secondAttribute="trailing" id="x4B-9u-WsG"/>
                                         <constraint firstItem="bVQ-Bq-jd3" firstAttribute="top" secondItem="r4g-V6-g6b" secondAttribute="topMargin" constant="25" id="xg0-rp-54q"/>
+                                        <constraint firstItem="RP0-JV-ekj" firstAttribute="width" secondItem="bVQ-Bq-jd3" secondAttribute="width" id="zNh-hx-Zvb"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
+                                            <exclude reference="KKn-uh-yka"/>
                                             <exclude reference="XMR-hG-xFF"/>
                                             <exclude reference="xg0-rp-54q"/>
                                             <exclude reference="nvC-NC-dqJ"/>
@@ -92,7 +119,9 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="ChatBubbleImage" destination="BLH-1V-vZ6" id="lkX-oW-2I9"/>
+                                    <outlet property="ChatBubbleLeftLeft" destination="BLH-1V-vZ6" id="JmR-f2-N8f"/>
+                                    <outlet property="ChatBubbleLeftMiddle" destination="RP0-JV-ekj" id="nFO-Pu-LVg"/>
+                                    <outlet property="ChatBubbleLeftRight" destination="Uqz-Rr-HAy" id="QsR-Xv-qPt"/>
                                     <outlet property="message" destination="bVQ-Bq-jd3" id="mzu-Ue-f5X"/>
                                     <outlet property="time" destination="Cbq-Rj-DJS" id="cfg-Lk-sJf"/>
                                 </connections>

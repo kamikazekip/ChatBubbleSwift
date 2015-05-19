@@ -53,13 +53,9 @@ class ChatController: UIViewController, UITableViewDataSource, UITableViewDelega
             var cell: ChatBubbleLeft = tableView.dequeueReusableCellWithIdentifier("chatBubbleLeft") as! ChatBubbleLeft
             cell.message.text = message.message
             cell.time.text = message.time
-            println(cell.message.frame.width)
-            
-            var newSize = cell.message.frame.width
-            cell.ChatBubbleImage.frame = CGRectMake(100, 0, newSize, cell.frame.height); // set as you want
-            var image = UIImage(named: "ChatBubbleLeft")!
-            cell.ChatBubbleImage.image = image
-            println(image.size.width)
+            cell.ChatBubbleLeftLeft.image = UIImage(named: "ChatBubbleLeftLeft")!
+            cell.ChatBubbleLeftMiddle.image = UIImage(named: "ChatBubbleLeftMiddle")!
+            cell.ChatBubbleLeftRight.image = UIImage(named: "ChatBubbleLeftRight")!
             return cell
             
         }

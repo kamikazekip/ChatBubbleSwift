@@ -12,8 +12,9 @@ class ChatBubbleLeft: UITableViewCell {
 
     @IBOutlet weak var message: UILabel!
     @IBOutlet weak var time: UILabel!
-    @IBOutlet weak var ChatBubbleImage: UIImageView!
-    
+    @IBOutlet weak var ChatBubbleLeftLeft: UIImageView!
+    @IBOutlet weak var ChatBubbleLeftMiddle: UIImageView!
+    @IBOutlet weak var ChatBubbleLeftRight: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
