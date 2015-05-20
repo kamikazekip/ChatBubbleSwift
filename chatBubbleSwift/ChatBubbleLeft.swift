@@ -12,16 +12,20 @@ class ChatBubbleLeft: UITableViewCell {
 
     @IBOutlet weak var message: UILabel!
     @IBOutlet weak var time: UILabel!
-    @IBOutlet weak var ChatBubbleLeftLeft: UIImageView!
-    @IBOutlet weak var ChatBubbleLeftMiddle: UIImageView!
-    @IBOutlet weak var ChatBubbleLeftRight: UIImageView!
+    @IBOutlet weak var TopLeft: UIImageView!
+    @IBOutlet weak var TopMiddle: UIImageView!
+    @IBOutlet weak var TopRight: UIImageView!
+    @IBOutlet weak var MiddleLeft: UIImageView!
+    @IBOutlet weak var MiddleMiddle: UIImageView!
+    @IBOutlet weak var MiddleRight: UIImageView!
+    @IBOutlet weak var BottomLeft: UIImageView!
+    @IBOutlet weak var BottomMiddle: UIImageView!
+    @IBOutlet weak var BottomRight: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         message.numberOfLines = 0
-        message.lineBreakMode = .ByWordWrapping // or NSLineBreakMode.ByWordWrapping
         message.sizeToFit()
-        println("HALLO")
     }
     
     override func setSelected(selected: Bool, animated: Bool) {

@@ -11,23 +11,16 @@ import UIKit
 class ChatController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-    
-    var messages: [Message] = [Message]()
+    var messages: [Message] = [Message(sender: "Erik", message: "Hallo ik heb een probleem", time: "18:03"),
+                               Message(sender: "Jip", message: "Nou... Ik heb op het moment van het typen van dit lange bericht nog geen idee van hoe je chatbubbles maakt",  time: "18:04"),
+                                Message(sender: "Erik", message: "Nou... Ik heb op het moment van het typen van dit lange bericht nog geen idee van hoe je chatbubbles maakt", time: "18:06")]
     var user: String = "Erik"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.estimatedRowHeight = 59.6
-        // Do any additional setup after loading the view, typically from a nib.
     }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        messages.append(Message(sender: "Erik", message: "Hallo ik heb een probleem", time: "18:03"))
-        messages.append(Message(sender: "Jip", message: "Nou... Ik heb op het moment van het typen van dit lange bericht nog geen idee van hoe je chatbubbles maakt",  time: "18:04"))
-        messages.append(Message(sender: "Erik", message: "Nou... Ik heb op het moment van het typen van dit lange bericht nog geen idee van hoe je chatbubbles maakt", time: "18:06"))
-        self.tableView.reloadData()
-    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -53,9 +46,15 @@ class ChatController: UIViewController, UITableViewDataSource, UITableViewDelega
             var cell: ChatBubbleLeft = tableView.dequeueReusableCellWithIdentifier("chatBubbleLeft") as! ChatBubbleLeft
             cell.message.text = message.message
             cell.time.text = message.time
-            cell.ChatBubbleLeftLeft.image = UIImage(named: "ChatBubbleLeftLeft")!
-            cell.ChatBubbleLeftMiddle.image = UIImage(named: "ChatBubbleLeftMiddle")!
-            cell.ChatBubbleLeftRight.image = UIImage(named: "ChatBubbleLeftRight")!
+            cell.TopLeft.image = UIImage(named: "LeftTopLeft")!
+            cell.TopMiddle.image = UIImage(named: "LeftTopMiddle")!
+            cell.TopRight.image = UIImage(named: "LeftTopRight")!
+            cell.MiddleLeft.image = UIImage(named: "LeftMiddleLeft")!
+            cell.MiddleMiddle.image = UIImage(named: "LeftMiddleMiddle")!
+            cell.MiddleRight.image = UIImage(named: "LeftMiddleRight")!
+            cell.BottomLeft.image = UIImage(named: "LeftBottomLeft")!
+            cell.BottomMiddle.image = UIImage(named: "LeftBottomMiddle")!
+            cell.BottomRight.image = UIImage(named: "LeftBottomRight")!
             return cell
         }
     }
