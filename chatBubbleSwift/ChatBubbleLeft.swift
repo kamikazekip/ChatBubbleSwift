@@ -19,7 +19,9 @@ class ChatBubbleLeft: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         message.numberOfLines = 0
+        message.lineBreakMode = .ByWordWrapping // or NSLineBreakMode.ByWordWrapping
         message.sizeToFit()
+        println("HALLO")
     }
     
     override func setSelected(selected: Bool, animated: Bool) {

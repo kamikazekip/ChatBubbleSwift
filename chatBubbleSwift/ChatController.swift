@@ -24,7 +24,7 @@ class ChatController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         messages.append(Message(sender: "Erik", message: "Hallo ik heb een probleem", time: "18:03"))
-        messages.append(Message(sender: "Jip", message: "Hoe kan ik jou dan helpen?",  time: "18:04"))
+        messages.append(Message(sender: "Jip", message: "Nou... Ik heb op het moment van het typen van dit lange bericht nog geen idee van hoe je chatbubbles maakt",  time: "18:04"))
         messages.append(Message(sender: "Erik", message: "Nou... Ik heb op het moment van het typen van dit lange bericht nog geen idee van hoe je chatbubbles maakt", time: "18:06"))
         self.tableView.reloadData()
     }
@@ -57,7 +57,6 @@ class ChatController: UIViewController, UITableViewDataSource, UITableViewDelega
             cell.ChatBubbleLeftMiddle.image = UIImage(named: "ChatBubbleLeftMiddle")!
             cell.ChatBubbleLeftRight.image = UIImage(named: "ChatBubbleLeftRight")!
             return cell
-            
         }
     }
 }
